@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1
+orapiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: k8s-ingress
@@ -29,6 +29,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: nginx
+            name: error-service
             port:
               number: 80
